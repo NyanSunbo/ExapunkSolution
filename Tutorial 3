@@ -1,5 +1,4 @@
 # XA
-
 LINK 800      # move to 800
 LINK 799      # move to 799 ( Secret Zone )
 GRAB 199      # pick up file 199
