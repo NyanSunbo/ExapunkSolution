@@ -1,0 +1,17 @@
+# XA
+
+LINK 800      # move to 800
+LINK 799      # move to 799 ( Secret Zone )
+GRAB 199      # pick up file 199
+COPY F M      # copy value from F to M ( M is share between Exa )
+COPY F M      # copy value from F to M ( M is share between Exa )
+WIPE          # Delete file 199
+
+
+# XB
+LINK 800      # move to 800
+LINK 800      # move to 800
+MAKE          # create empty file
+COPY M X      # copy value from M to X
+COPY M F      # copy value from M to F (file)
+COPY X F      # copy value from X to F (file)
