@@ -1,0 +1,17 @@
+# XA 
+LINK 800      # move to 800
+GRAB 200      # grab file 200
+COPY F M      # copy value from F (file) to M (Share data exa)
+WIPE          # delete file 200
+
+# XB  
+LINK 800      # move to 800
+MAKE          # create file
+LINK 800      # move to 800
+COPY M X      # copy value from M to X (Register)
+COPY X F      # copy value from X to F (File)
+MARK LOOP     # Create "LOOP" jump label
+SUBI X 1 X    # subtract X by 1 then store to X ( x - 1 => x)
+COPY X F      # copy value from X to F (File)  //append data
+TEST X = 0    # check X if x == 0 then t = 1 else t = 0
+FJMP LOOP     # if t = 0 (false) then move cursor to jump label "LOOP"    //FJMP = False jump , TJMP = True jump
