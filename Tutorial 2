@@ -1,0 +1,8 @@
+LINK 800
+GRAB 200      
+COPY F X        # copy value from file to X
+ADDI X F X      # add value from file to x then store to x
+MULI X F X      # multiply value from file to x then store to x
+SUBI X F X      # subtract value from file to x then store to x
+COPY X F        # copy value form x to file
+LINK 800
